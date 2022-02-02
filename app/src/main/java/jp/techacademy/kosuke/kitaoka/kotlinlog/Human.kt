@@ -16,15 +16,15 @@ import android.util.Log
 
      // Animalクラスのメソッドをオーバーライド
      override fun say() {
-         Log.d("kotlintest", "私の名前は"+"nameです。" )
-         Log.d("kotlintest","年は"+"ageです。" )
+         Log.d("kotlintest", this.name+this.age+"歳"+this.hobby)
+
 
      }
 
 
      // thinkableインターフェイスのメソッドをオーバーライド
      override fun think() {
-         Log.d("kotlintest", "私は" +  "hobby" + "について考える。")
+         Log.d("kotlintest", this.hobby )
      }
  }
 

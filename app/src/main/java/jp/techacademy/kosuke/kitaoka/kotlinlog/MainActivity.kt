@@ -12,10 +12,22 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val human= Human("name",0,"hobby")
+        val human= Human("田中",20,"読書")
         human.say()
-        val human2=Human("name",0,"hobby")
+        Log.d("kotlintest","私の名前は"+human.name+"です。")
+        Log.d("kotlintest","年は"+human.age+"歳です。")
+
+        human.think()
+        Log.d("kotlintest","私は"+human.hobby+"について考える。")
+
+        val human2=Human("山田",25,"映画鑑賞")
+        human2.say()
+        Log.d("kotlintest","私の名前は"+human2.name+"です。")
+        Log.d("kotlintest","年は"+human2.age+"歳です。")
+
         human2.think()
+        Log.d("kotlintest","私は"+human2.hobby+"について考える。")
+
 
     }
 }
