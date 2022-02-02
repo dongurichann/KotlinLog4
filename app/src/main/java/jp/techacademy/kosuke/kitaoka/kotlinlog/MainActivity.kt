@@ -12,16 +12,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val human= Human("私の名前は",20,"hobby")
+        val human= Human("name",0,"hobby")
         human.say()
-        val human2=Human("私は",0,"hobby")
-        human.think()
-
-
-
-
-
-
+        val human2=Human("name",0,"hobby")
+        human2.think()
 
     }
 }
